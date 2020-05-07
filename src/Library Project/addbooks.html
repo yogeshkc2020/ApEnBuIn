@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Book</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+</head>
+<body>
+    <center><h2>Add Books</h2></center>
+    <form method="POST">
+        <table border="1" align="center" cellpadding="5" cellspacing="5">
+            <tr>
+                <th>ISBN :</th>
+                <td><input type="text" name="isbn" size="48" maxlength="13" required=""></td>
+            </tr>
+            <tr>
+                <th>Book Title :</th>
+                <td><input type="text" name="title" size="48" maxlength="10" required=""></td>
+            </tr>
+            <tr>                
+                <th>Author Name :</th>
+                <td><input type="text" name="author" size="48" maxlength="10" required=""></td>
+            </tr>
+            <tr>
+                <th>Publisher :</th>
+                <td><input type="text" name="edition" size="48" maxlength="10" required=""></td>
+            </tr>
+            <tr>
+                <th>Added Date : </th>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="button" onclick="alert('Book added!')">Add</button>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
