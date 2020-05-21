@@ -61,7 +61,7 @@ background-image: url('images/login.jpg');
           $_SESSION['login_user'] = $_POST['username'];
           ?>
           <script type="text/javascript"> 
-          window.location="profile.php"         
+          window.location="books.php"         
           </script>
           <?php
       }
