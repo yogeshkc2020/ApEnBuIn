@@ -58,6 +58,7 @@ background-image: url('images/registration.jpg');
     ?>
       <script type="text/javascript">
         alert("Registration successful");
+        window.location="index.php";
       </script>
     <?php
     }

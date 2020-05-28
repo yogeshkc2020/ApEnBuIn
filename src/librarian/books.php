@@ -75,6 +75,7 @@ body {
     </div><br><br>
   <div class="h"><a href="books.php">List Of Books</a></div>
   <div class="h"><a href="add.php">Add Books</a></div>
+  <div class="h"><a href="request.php">Book Request</a></div>
 </div>
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
@@ -178,6 +179,7 @@ function closeNav() {
           ?>
           <script type="text/javascript">
           alert("Successfully Deleted.");
+          window.location="books.php";
           </script>
           <?
         }
@@ -186,6 +188,7 @@ function closeNav() {
           ?>
           <script type="text/javascript">
           alert("Please Login First.");
+          window.location="librarian_login.php";
           </script>
           <?
         }

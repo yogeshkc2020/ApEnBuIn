@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 15, 2020 at 09:58 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.5
+-- Creato il: Mag 28, 2020 alle 12:21
+-- Versione del server: 10.4.11-MariaDB
+-- Versione PHP: 7.4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `books`
+-- Struttura della tabella `books`
 --
 
 CREATE TABLE `books` (
@@ -38,16 +38,30 @@ CREATE TABLE `books` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `books`
+-- Dump dei dati per la tabella `books`
 --
 
 INSERT INTO `books` (`id`, `isbn`, `title`, `authors`, `edition`, `status`, `quantity`) VALUES
-(1, '8883372050', 'Divina Commedia', 'Dante Alighieri', '1st', 'Available', 10);
+(1, '123456789101', 'Divina Commedia', 'Dante Alleghieri', '9th', 'Available', 8);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `librarian`
+-- Struttura della tabella `issue_book`
+--
+
+CREATE TABLE `issue_book` (
+  `username` varchar(50) NOT NULL,
+  `id` int(50) NOT NULL,
+  `approve` varchar(50) NOT NULL,
+  `issue` varchar(50) NOT NULL,
+  `return` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `librarian`
 --
 
 CREATE TABLE `librarian` (
@@ -60,17 +74,16 @@ CREATE TABLE `librarian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `librarian`
+-- Dump dei dati per la tabella `librarian`
 --
 
 INSERT INTO `librarian` (`firstname`, `surname`, `username`, `password`, `email`, `contact`) VALUES
-('Sam', 'Sam', 'sam', '123456789', 'sam2020@gmail.com', '123456789'),
-('Stefan', 'Stefan', 'stefan', '123456789', 'stefan2020@gmail.com', '123456789');
+('Max', 'Sieger', 'max', '123456789', 'maxsieger@gmail.com', '123456789');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struttura della tabella `user`
 --
 
 CREATE TABLE `user` (
@@ -83,11 +96,11 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
+-- Dump dei dati per la tabella `user`
 --
 
 INSERT INTO `user` (`firstname`, `surname`, `username`, `password`, `email`, `contact`) VALUES
-('Hugo', 'Hugo', 'hugo', '123456789', 'hugo2020@gmail.com', '123456789');
+('Sam', 'Sieger', 'sam', '123456789', 'samsieger@gmail.com', '123456789');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

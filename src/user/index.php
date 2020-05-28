@@ -1,6 +1,6 @@
 <?php
-  include "connection.php";
-  include "navbar.php";
+     include "connection.php";
+     include "navbar.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,15 +33,11 @@ background-image: url('images/login.jpg');
                 <input class="form-control" type="password" name="password" placeholder="Password" required=""> <br>
                 <input class="btn btn-warning" type="submit" name="submit" value="Login" style="color: black; width: 70px; height: 30px;">
             </div>
-            <p style="color: white; padding-left: 15px;">
-                <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <a style="color: white; text-decoration: none;" href="update_password.php">Reset Password</a> 
-            </p>
           </form>
         </div>
     </div>
 </section>
-  <?php
+<?php
     if(isset($_POST['submit']))
     {
       $count=0;

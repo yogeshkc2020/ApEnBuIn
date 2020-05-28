@@ -17,7 +17,6 @@
                 <a class="navber-brand active" style="margin: 15px;">E-LIBRARY</a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href="index.php">HOME</a></li>
                 <li><a href="books.php">BOOKS</a></li>
             </ul>
             <?php
@@ -28,7 +27,7 @@
                        <li><a href="profile.php">PROFILE</a></li>
                     </ul>     
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="profile.php">
+                        <li><a>
                             <div style="color:white">     
                                <?php
                                   echo " ".$_SESSION['login_user'];
@@ -42,7 +41,7 @@
                     else {
                     ?>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="user_login.php"><span class="glyphicon glyphicon-log-in"> LOGIN</span></a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-log-in"> LOGIN</span></a></li>
                         <li><a href="registration.php"><span class="glyphicon glyphicon-user"> SIGN-UP</span></a></li>
                     </ul> 
                     <?php
