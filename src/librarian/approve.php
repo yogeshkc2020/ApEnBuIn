@@ -1,6 +1,6 @@
 <?php
-  include "connection.php";
-  include "navbar.php";
+  include "../connection.php";
+  include "../navbar.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -92,6 +92,7 @@ color: white;
       <div class="h"><a href="books.php">List Of Books</a></div>
       <div class="h"><a href="add.php">Add Books</a></div>
       <div class="h"><a href="request.php">Book Request</a></div>
+      <div class="h"><a href="user.php">User Information</a></div>
 </div>
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>

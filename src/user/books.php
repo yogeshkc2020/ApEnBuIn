@@ -1,6 +1,6 @@
 <?php
-  include "connection.php";
-  include "navbar.php";
+  include "../connection.php";
+  include "../navbar.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -186,8 +186,8 @@ function closeNav() {
 			  {
 				  ?>
 					<script type="text/javascript">
-          alert("Please Login First.");
-          window.location="index.php";
+					alert("Please Login First.");
+          window.location="../index.php";
 					</script>
 			 	  <?php
 			  }

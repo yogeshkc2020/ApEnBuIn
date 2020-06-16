@@ -16,16 +16,13 @@
             <div class="navbar-header" style="padding-top: 15px;">
                 <a class="navber-brand active" style="margin: 15px;">E-LIBRARY</a>
             </div>
-            <ul class="nav navbar-nav">
-                <li><a href="books.php">BOOKS</a></li>
-            </ul>
             <?php
                   if(isset($_SESSION['login_user'])) 
                   {
-                    ?>
+                    ?>   
                     <ul class="nav navbar-nav">
-                       <li><a href="profile.php">PROFILE</a></li>
-                    </ul>     
+                       <li><a href="books.php">BOOKS</a></li>
+                    </ul>  
                     <ul class="nav navbar-nav navbar-right">
                         <li><a>
                             <div style="color:white">     
@@ -34,7 +31,7 @@
                                ?>
                             </div>
                         </a></li>
-                        <li><a href="logout.php "><span class="glyphicon glyphicon-log-out"> LOGOUT</span></a></li>
+                        <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"> LOGOUT</span></a></li>
                     </ul>
                     <?php
                    }

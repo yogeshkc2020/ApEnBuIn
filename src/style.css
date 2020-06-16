@@ -112,16 +112,6 @@ li a {
 
 
 
-.box1 {
-    height: 400px;
-    width: 450px;
-    background-color: #0a0605;
-    margin: 80px auto;
-    opacity: .6;
-    color: white ;
-    padding: 20px;
-}
-
 form .login {
     margin: auto 50px;
 }

@@ -4,5 +4,5 @@
     {
         unset($_SESSION['login_user']);
     }
-    header("location:index.php");
+    header("location:../index.php");
 ?>

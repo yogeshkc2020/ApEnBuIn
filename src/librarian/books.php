@@ -1,6 +1,6 @@
 <?php
-  include "connection.php";
-  include "navbar.php";
+  include "../connection.php";
+  include "../navbar.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,11 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  font-family: "Lato", sans-serif;
+font-family: "Lato", sans-serif;
 }
 .srch {
-  padding-left: 910px;
-  margin-top: -50px;
+padding-left: 910px;
+margin-top: -50px;
 }
 .sidenav {
   height: 100%;
@@ -76,6 +76,7 @@ body {
   <div class="h"><a href="books.php">List Of Books</a></div>
   <div class="h"><a href="add.php">Add Books</a></div>
   <div class="h"><a href="request.php">Book Request</a></div>
+  <div class="h"><a href="user.php">User Information</a></div>
 </div>
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
@@ -188,7 +189,7 @@ function closeNav() {
           ?>
           <script type="text/javascript">
           alert("Please Login First.");
-          window.location="librarian_login.php";
+          window.location="../index.php";
           </script>
           <?
         }
